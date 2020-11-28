@@ -1,20 +1,44 @@
 import React from 'react';
 import './../../App.css';
+import './../../styles/Nevbar.css';
 
 class Nevbar extends React.Component{
     constructor(props){
-        super();
-        this.state = {};
+        super(props);
+        this.state = {
+            nav_links: undefined,
+            isClicked: false
+        };
     }
-    
-    //css are located at the end the page
+
+    componentDidMount() {
+        const nev_links = document.querySelectorAll('.nav_links li');
+        this.setState({nav_links: nev_links});
+    }
+
+    navHandler = (e) => {
+        const nav_links = document.querySelector('.nav_links');
+        nav_links.classList.toggle('nav-active');
+
+        this.state.nav_links.forEach((link,index) => {
+            if(link.style.animation){
+                link.style.animation = ``;
+            }else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+
+        e.target.classList.toggle('toggle');
+    }
+
+
     render(){
        return(
-          <nav className="nav" style={this.navStyle()}>
-              <div className="logo" style={this.logoStyle()}>
-                  <h4>Logo</h4>
+          <nav>
+              <div className="logo" >
+                  <h4>Shihara</h4>
               </div>
-              <ul style={this.nevList()}>
+              <ul className="nav_links">
                   <li>
                       <a href="#!">About</a>
                   </li>
@@ -27,42 +51,15 @@ class Nevbar extends React.Component{
                   <li>
                       <a href="#!">Contact</a>
                   </li>
-                  
               </ul>
+              <div className="burger" onClick={this.navHandler}>
+                  <div className="line1"/>
+                  <div className="line2"/>
+                  <div className="line3"/>
+              </div>
           </nav>
        );
     }
-    
-    logoStyle(){
-        return{
-            color: "#000000",
-        }
-    }
-    
-    navStyle(){
-        return{
-            display: "flex",
-            justifyContent: "space-around",
-            alignItems: "center",
-            minHeight: "10vh",
-            backgroundColor: "#5D4954",
-            fontFamily: "sans-serif",
-            
-        }
-    }
-    
-    nevList(){
-        return{
-            listStyle: "none",
-            justifyContent: "space-around",
-            display: "flex",
-            textDecoration: "none",
-        }
-    }
-    
-    
-    
-    
 
 }
 
