@@ -65,6 +65,7 @@ nav {
 
     .logo {
         left: 3%;
+        display: none;
     }
 
     .nav_links {
@@ -87,6 +88,7 @@ nav {
 
     .burger{
         display: block;
+        
     }
 }
 
