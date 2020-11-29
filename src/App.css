@@ -50,6 +50,10 @@ hr {
     .slider {
         width: 30%;
     }
+
+    .cursor {
+        display: none;
+    }
 }
 
 .test {
