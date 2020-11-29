@@ -14,6 +14,10 @@
     font-weight: lighter;
 }
 
+.intro-text span{
+    opacity: 0;
+}
+
 .intro {
     background: #00897b;
     position: fixed;
@@ -25,7 +29,7 @@
     font-family: 'Poppins', sans-serif;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s ease;
+    transition: transform 1.5s ease;
 }
 .upperDownSlider {
     background: #00897b;
@@ -35,6 +39,10 @@
     height: 100%;
     width: 100%;
     transform: translateY(100%);
+}
+
+.slideUp {
+    transform: translateY(-100%);
 }
 
 .intro-text {
@@ -55,5 +63,16 @@
 
     .intro-text h6 {
         font-size: 1rem;
+    }
+}
+
+@keyframes welcomeNoteFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

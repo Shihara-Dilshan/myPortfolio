@@ -7,7 +7,6 @@ class Nevbar extends React.Component{
         super(props);
         this.state = {
             nav_links: undefined,
-            isClicked: false
         };
     }
 

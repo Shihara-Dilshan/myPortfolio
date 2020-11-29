@@ -1,0 +1,76 @@
+.About_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#skill_icon {
+    border-radius: 50%;
+}
+
+.tech li {
+    list-style: square !important;
+
+}
+
+.details_info {
+    margin-top: 5%;
+    width: 40%;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(226,226,266);
+}
+
+.single_list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+
+.skills {
+    margin-left: 5px;
+}
+
+#profile_pic {
+    border-radius: 5%;
+    margin-top: 25%;
+    z-index: -1;
+}
+
+@keyframes skillsFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 728px){
+    .About_info {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .details_info {
+        margin-top: 5%;
+        width: 80%;
+    }
+
+    .single_list {
+        margin-top: 5px;
+    }
+
+    .skills {
+        margin-left: 5px;
+    }
+
+    #profile_pic {
+        margin-top: 10%;
+        border-radius: 50%;
+
+    }
+}

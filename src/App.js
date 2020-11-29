@@ -3,12 +3,13 @@ import './App.css';
 
 import Nevbar from './Components/Nevbar/Nevbar';
 import Slider from './Components/Slider/Slider';
+import About from './Components/About/About';
 
 export default class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+             componentList : [<About />]
         };
     }
 
@@ -36,6 +37,13 @@ export default class App extends Component {
             })
         })
 
+        document.addEventListener( 'scroll' , () => {
+            if(11==1){
+                let currentCom = [...this.state.componentList, <About />];
+                this.setState({componentList: currentCom});
+            }
+        });
+
 
     }
 
@@ -45,6 +53,7 @@ export default class App extends Component {
              <div className="cursor test"/>
              <Nevbar />
              <Slider />
+             {this.state.componentList.map( comp => comp)}
            </React.Fragment>
        );
     }

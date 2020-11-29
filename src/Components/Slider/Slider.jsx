@@ -5,11 +5,26 @@ import image from './../../myphoto.png';
 
 class Slider extends React.Component{
 
+    componentDidMount() {
+        const welcome_notes = document.querySelectorAll('.intro-text span');
+        welcome_notes.forEach((link,index) => {
+
+            if(link.style.animation){
+                link.style.animation = ``;
+            }else {
+                link.style.animation = `welcomeNoteFade 0.5s ease forwards ${index / 2 + 0.5}s`;
+            }
+        });
+
+        setTimeout( () => {
+            const sliderUp = document.querySelector('.intro');
+            sliderUp.classList.add('slideUp');
+        },3000);
+    }
+
     render() {
         return (
-            <section >
-                <img src={image} alt="" style={{width:"100%"}}/>
-                <h1 className="big-text" >Hi, my name is</h1>
+            <section>
                 <div className="intro">
                     <div className="intro-text">
                         <h2 className="hide">
