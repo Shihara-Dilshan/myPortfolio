@@ -1,7 +1,6 @@
 import React from 'react';
 import './../../styles/Slider.css';
 import './../../App.css';
-import image from './../../myphoto.png';
 
 class Slider extends React.Component{
 
