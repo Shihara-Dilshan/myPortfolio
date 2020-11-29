@@ -13,7 +13,7 @@ export default class About extends React.Component {
     }
 
     componentDidMount() {
-        const skills_list = ['JavaScript (ES6+)/ TypeScript / HTML5 / CSS3', 'NodeJS / ExpressJS / Deno', 'Java / SpringBoot', 'Python / Flask / Django', 'React / Angular/ Vue', 'Android Studio with Java', 'React Native'];
+        const skills_list = ['JavaScript/TypeScript / HTML5 / CSS3', 'NodeJS / ExpressJS / Deno', 'Java / SpringBoot', 'Python / Flask / Django', 'React / Angular/ Vue', 'Android Studio with Java', 'React Native'];
         const icon_list = ['https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png',
                            'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png',
                            'https://sdtimes.com/wp-content/uploads/2019/03/jW4dnFtA_400x400.jpg',
@@ -40,7 +40,10 @@ export default class About extends React.Component {
                         Here are a few technologies I've been working with recently:</p>
                     <br/>
                     <ul className="tech">
-                       
+                        {this.state.skills.map( (skill,index) => <li key={skill} className="single_list">
+                            <img id="skill_icon" align="left" alt="ddd" width="22px" src={this.state.icons[index]} />
+                            <span className="skills"> {skill}</span></li>
+                        )}
                     </ul>
 
                 </div>

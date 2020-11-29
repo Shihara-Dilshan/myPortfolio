@@ -1,9 +1,11 @@
 body {
     cursor: none;
     background: #282b2b;
-    overflow-y: hidden;
     overflow-x: hidden;
+    position: absolute;
 }
+
+
 
 hr {
     width: 112px;
