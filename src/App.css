@@ -1,5 +1,41 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+body {
+    cursor: none;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+.cursor {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid darkgray;
+    border-radius: 50%;
+    position: absolute;
+    background: rgba(0,0,0, 0.4);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    backdrop-filter: blur(3px);
+}
+
+.link-grow {
+    transform: scale(2);
+    background: rgba(0,0,0, 0.4);
+    border: #00897b;
+}
+
+.onTop {
+    z-index: 1;
+    color: red;
+}
+
+
+
+
+

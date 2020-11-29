@@ -1,10 +1,10 @@
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
     min-height: 8vh;
-    background-color: #5d5d5d;
+    background-color: #00897b;
     font-family: 'Poppins', sans-serif;
 
 }
@@ -14,6 +14,9 @@ nav {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+    position: absolute;
+    left: 3%;
+
 }
 
 .nav_links {
@@ -38,6 +41,7 @@ nav {
 .burger {
     display: none;
     cursor: pointer;
+    margin-right: 3%;
 }
 
 .burger div{
@@ -64,7 +68,7 @@ nav {
         right: 0;
         height: 92vh;
         top: 8vh;
-        background-color: #5D5D5D;
+        background-color: #00897b;
         display: flex;
         flex-direction: column;
         align-items: center;

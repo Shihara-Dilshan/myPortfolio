@@ -40,16 +40,16 @@ class Nevbar extends React.Component{
               </div>
               <ul className="nav_links">
                   <li>
-                      <a href="#!">About</a>
+                      <a href="#!" className="hoverable">About</a>
                   </li>
                   <li>
-                      <a href="#!">Experience</a>
+                      <a href="#!" className="hoverable">Experience</a>
                   </li>
                   <li>
-                      <a href="#!">Work</a>
+                      <a href="#!" className="hoverable">Work</a>
                   </li>
                   <li>
-                      <a href="#!">Contact</a>
+                      <a href="#!" className="hoverable">Contact</a>
                   </li>
               </ul>
               <div className="burger" onClick={this.navHandler}>
