@@ -1,8 +1,8 @@
 body {
     cursor: none;
     background: #282b2b;
-    overflow-x: hidden;
-    position: absolute;
+    overflow: hidden;
+    position: static;
 }
 
 
@@ -49,10 +49,6 @@ hr {
 @media screen and (max-width: 768px){
     .slider {
         width: 30%;
-    }
-
-    .cursor {
-        display: none;
     }
 }
 
