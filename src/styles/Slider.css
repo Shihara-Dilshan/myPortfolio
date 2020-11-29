@@ -65,7 +65,12 @@
         font-size: 1rem;
     }
     
+    .intro {
     
+    height: 50%;
+    width: 100%;
+    
+}
 }
 
 @keyframes welcomeNoteFade {
