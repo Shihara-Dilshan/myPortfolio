@@ -11,12 +11,12 @@ nav {
 
 .logo {
     color: rgb(226,226,226);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+    letter-spacing: 2px;
     position: absolute;
     left: 3%;
-
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+    font-size: 2rem;
 }
 
 .nav_links {
@@ -52,7 +52,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 10264px){
+@media screen and (max-width: 1024px){
     .nav_links {
         width: 60%;
     }

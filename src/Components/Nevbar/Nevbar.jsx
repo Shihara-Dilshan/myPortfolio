@@ -36,7 +36,7 @@ class Nevbar extends React.Component{
        return(
           <nav>
               <div className="logo" >
-                  <h4>Shihara</h4>
+                  <h4>ShiharaD</h4>
               </div>
               <ul className="nav_links">
                   <li>

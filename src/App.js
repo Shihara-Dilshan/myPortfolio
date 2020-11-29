@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import './App.css';
 
 import Nevbar from './Components/Nevbar/Nevbar';
+import Slider from './Components/Slider/Slider';
 
 export default class App extends Component {
     constructor(props) {
@@ -40,8 +42,9 @@ export default class App extends Component {
     render(){
        return(
            <React.Fragment style={{cursor: "none"}}>
-             <div className="cursor"/>
+             <div className="cursor test"/>
              <Nevbar />
+             <Slider />
            </React.Fragment>
        );
     }

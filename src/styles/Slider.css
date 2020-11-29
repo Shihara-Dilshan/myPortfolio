@@ -1,0 +1,59 @@
+.slider {
+    overflow-x: hidden;
+    transition: transform 0.5s ease;
+}
+
+.big-text {
+    position: absolute;
+    color: rgb(226,226,226);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+}
+
+.intro {
+    background: #00897b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+.upperDownSlider {
+    background: #00897b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+}
+
+.intro-text {
+    color: rgb(233,233,233);
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+
+
+@media screen and (max-width: 768px){
+    .intro-text h2 {
+        font-size: 2rem;
+    }
+
+    .intro-text h4 {
+        font-size: 1.5rem;
+    }
+
+    .intro-text h6 {
+        font-size: 1rem;
+    }
+}
