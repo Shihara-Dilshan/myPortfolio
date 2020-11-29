@@ -41,7 +41,7 @@ export default class About extends React.Component {
                     <br/>
                     <ul className="tech">
                         {this.state.skills.map( (skill,index) => <li key={skill} className="single_list">
-                            <img id="skill_icon" align="left" alt="ddd" width="22px" src={this.state.icons[index]} />
+                            <img id="skill_icon" align="left" alt="ddd" width="22px" height="22px" src={this.state.icons[index]} />
                             <span className="skills"> {skill}</span></li>
                         )}
                     </ul>
